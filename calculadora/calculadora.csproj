@@ -1,0 +1,76 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>disable</Nullable>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+	</ItemGroup>
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<PackageIcon>calculadoraIcone.png</PackageIcon>
+		<ApplicationIcon>Content\Images\calculadoraIcon.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="3dotsIcon.png" />
+		<None Remove="backspaceTrue.png" />
+		<None Remove="calculadoraIcone.png" />
+		<None Remove="close.png" />
+		<None Remove="divisaoIcon.png" />
+		<None Remove="eraseIcone.png" />
+		<None Remove="minimize.png" />
+		<None Remove="multiplicacaoIcon.png" />
+		<None Remove="subIcon.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Content\Images\calculadoraIcon.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Data.SQLite" Version="1.0.117" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Page Include="App.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Content\Images\3dotsIcon.png" />
+		<Resource Include="Content\Images\backspaceTrue.png" />
+		<Resource Include="Content\Images\calculadoraIcone.png" />
+		<Resource Include="Content\Images\close.png" />
+		<Resource Include="Content\Images\divisaoIcon.png" />
+		<Resource Include="Content\Images\eraseIcone.png" />
+		<Resource Include="Content\Images\minimize.png" />
+		<Resource Include="Content\Images\multiplicacaoIcon.png" />
+		<Resource Include="Content\Images\subIcon.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Content\Images\calculadoraIcone.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <Page Update="Views\PersistenciaContas\PersistenciaContas.xaml">
+	    <Generator></Generator>
+	    <XamlRuntime></XamlRuntime>
+	    <SubType></SubType>
+	  </Page>
+	</ItemGroup>
+
+</Project>
